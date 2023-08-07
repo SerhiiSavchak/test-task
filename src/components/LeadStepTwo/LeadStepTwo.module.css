@@ -1,0 +1,99 @@
+.stepTwoWrap {
+  margin-top: 48px;
+}
+
+.stepTwoTitle {
+  width: 342px;
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+.stepTwoForm {
+}
+
+.stepTwoTopWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.stepTwoBottomWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.stepTwoText {
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.stepTwoTextValue {
+  width: 116px;
+  color: var(--black);
+
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  border-radius: 4px;
+  border: 2px solid var(--black);
+}
+
+.stepTwoInput {
+  -webkit-appearance: none;
+  width: 342px;
+  display: block;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.stepTwoInput:focus-visible {
+  outline: none;
+}
+
+.stepTwoInput::-webkit-slider-runnable-track {
+  background: var(--grey);
+  height: 4px;
+  border-radius: 6px;
+}
+
+.stepTwoInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  margin-top: -6px;
+  background: #d92134;
+  border-radius: 50%;
+}
+
+.stepTwoBtn {
+  font-family: metropolis-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0.35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 342px;
+  height: 40px;
+  padding: 10px 147px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--black);
+}

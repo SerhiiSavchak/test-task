@@ -1,0 +1,21 @@
+.startMessageTitle {
+  max-width: 342px;
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%;
+  margin-bottom: 14px;
+}
+.startMessageText {
+  max-width: 342px;
+  color: var(--dark-grey);
+  text-align: center;
+  font-size: 14px;
+  font-family: metropolis-medium;
+  line-height: 175%;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  margin-bottom: 34px;
+}
