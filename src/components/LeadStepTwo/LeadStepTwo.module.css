@@ -1,7 +1,3 @@
-.stepTwoWrap {
-  margin-top: 48px;
-}
-
 .stepTwoTitle {
   width: 342px;
   color: var(--black);
@@ -14,15 +10,13 @@
   margin-bottom: 32px;
 }
 
-.stepTwoForm {
-}
-
 .stepTwoTopWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
+
 .stepTwoBottomWrap {
   display: flex;
   justify-content: space-between;
@@ -42,7 +36,6 @@
 .stepTwoTextValue {
   width: 116px;
   color: var(--black);
-
   text-align: center;
   font-family: metropolis-medium;
   font-size: 20px;
@@ -96,4 +89,65 @@
   border-radius: 4px;
   color: var(--white);
   background-color: var(--black);
+  transition: color var(--cubic-bezier), background-color var(--cubic-bezier);
+}
+
+.stepTwoBtn:is(:hover, :focus) {
+  color: var(--white);
+  background-color: rgba(11, 11, 12, 0.7);
+}
+
+@media screen and (min-width: 762px) {
+  .stepTwoTitle {
+    font-size: 28px;
+    width: 762px;
+    line-height: 143%;
+  }
+
+  .stepTwoForm {
+    margin: 0 auto;
+    width: 550px;
+  }
+
+  .stepTwoTopWrap {
+    justify-content: unset;
+    gap: 40px;
+    margin-bottom: 32px;
+  }
+
+  .stepTwoInput {
+    width: 550px;
+    margin-bottom: 21px;
+  }
+
+  .stepTwoBtn {
+    display: block;
+    width: 371px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepTwoTitle {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .stepTwoForm {
+    width: 570px;
+  }
+
+  .stepTwoTopWrap {
+    gap: 19px;
+  }
+  .stepTwoInput {
+    width: 570px;
+  }
+  .stepTwoBtn {
+    width: 392px;
+  }
+  .stepTwoBottomWrap {
+    margin-bottom: 72px;
+  }
 }

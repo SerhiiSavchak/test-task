@@ -1,7 +1,3 @@
-.stepFourWrap {
-  margin-top: 54px;
-}
-
 .stepFourTitle {
   color: #000;
   width: 342px;
@@ -19,33 +15,94 @@
   flex-wrap: wrap;
   gap: 24px 20px;
 }
+
 .stepFourItem {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 160px;
   cursor: pointer;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3.4591195583343506px 10.377358436584473px 0px
+    rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  padding: 13px 35px 0px;
+  padding-top: 13px;
+  transition: scale var(--cubic-bezier);
 }
-.stepFourItem:nth-child(3),
-.stepFourItem:nth-child(4) {
-  padding: 17px 35px 0px;
+
+.stepFourItem:is(:hover, :focus) {
+  scale: 1.05;
 }
 
 .stepFourIcon {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 7px;
+  width: 110px;
+  height: 100px;
 }
 
 .stepFourText {
   color: var(--black);
   text-align: center;
   font-family: metropolis-medium;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 157%;
   line-height: 242.857%;
+}
+
+@media screen and (min-width: 762px) {
+  .stepFourTitle {
+    font-size: 28px;
+    line-height: 143%;
+    width: 762px;
+    margin-bottom: 36px;
+  }
+
+  .stepFourList {
+    justify-content: center;
+    margin: 0 auto;
+    width: 372px;
+    gap: 28px 20px;
+  }
+
+  .stepFourItem {
+    width: 175px;
+    padding-top: 33px;
+  }
+
+  .stepFourIcon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 27px;
+  }
+
+  .stepFourText {
+    line-height: 286%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepFourTitle {
+    margin-bottom: 48px;
+  }
+
+  .stepFourList {
+    flex-wrap: nowrap;
+  }
+
+  .stepFourItem {
+    width: 255px;
+    padding: 32px 20px 20px;
+  }
+
+  .stepFourIcon {
+    width: 216px;
+    height: 200px;
+    margin-bottom: 32px;
+  }
+
+  .stepFourText {
+    font-size: 20px;
+    line-height: 170%;
+  }
 }

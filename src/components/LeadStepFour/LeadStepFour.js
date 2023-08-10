@@ -8,51 +8,51 @@ export const LeadStepFour = ({ step, setStep, stepInfo, setStepInfo }) => {
   };
 
   return (
-    <div className={css.stepFourWrap}>
+    <>
       <h2 className={css.stepFourTitle}>
-        Wie viel Fläche steht für eine Solaranlage ca. zur Verfügung?
+        Wann wurde dein Dach gebaut/saniert?
       </h2>
       <ul className={css.stepFourList}>
-        <li className={css.stepFourItem} onClick={onItemClick} id="Bis 30 m²">
+        <li
+          className={css.stepFourItem}
+          onClick={onItemClick}
+          id="Vor dem Jahr 2000"
+        >
           <svg className={css.stepFourIcon}>
-            <use href={sprite + '#icon-house-8'}></use>
+            <use href={sprite + '#icon-house-12'}></use>
           </svg>
 
-          <p className={css.stepFourText}>Bis 30 m²</p>
+          <p className={css.stepFourText}>Vor dem Jahr 2000</p>
         </li>
 
         <li
           className={css.stepFourItem}
           onClick={onItemClick}
-          id="30 - 100 m² min"
+          id="Nach dem Jahr  2000"
         >
           <svg className={css.stepFourIcon}>
-            <use href={sprite + '#icon-house-9'}></use>
+            <use href={sprite + '#icon-house-13'}></use>
           </svg>
 
-          <p className={css.stepFourText}>30 - 100 m²</p>
+          <p className={css.stepFourText}>Nach dem Jahr  2000</p>
         </li>
 
-        <li className={css.stepFourItem} onClick={onItemClick} id="30 - 100 m²">
+        <li className={css.stepFourItem} onClick={onItemClick} id="Vor Kurzem">
           <svg className={css.stepFourIcon}>
-            <use href={sprite + '#icon-house-10'}></use>
+            <use href={sprite + '#icon-house-14'}></use>
           </svg>
 
-          <p className={css.stepFourText}>30 - 100 m²</p>
+          <p className={css.stepFourText}>Vor Kurzem</p>
         </li>
 
-        <li
-          className={css.stepFourItem}
-          onClick={onItemClick}
-          id="100 - 200 m²"
-        >
+        <li className={css.stepFourItem} onClick={onItemClick} id="In Planung">
           <svg className={css.stepFourIcon}>
-            <use href={sprite + '#icon-house-11'}></use>
+            <use href={sprite + '#icon-house-15'}></use>
           </svg>
 
-          <p className={css.stepFourText}>100 - 200 m²</p>
+          <p className={css.stepFourText}>In Planung</p>
         </li>
       </ul>
-    </div>
+    </>
   );
 };

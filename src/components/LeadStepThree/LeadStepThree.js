@@ -8,7 +8,7 @@ export const LeadStepThree = ({ step, setStep, stepInfo, setStepInfo }) => {
   };
 
   return (
-    <div className={css.stepThreeWrap}>
+    <>
       <h2 className={css.stepThreeTitle}>
         Um welche Dachform handelt es sich?
       </h2>
@@ -17,7 +17,6 @@ export const LeadStepThree = ({ step, setStep, stepInfo, setStepInfo }) => {
           <svg className={css.stepThreeIcon}>
             <use href={sprite + '#icon-house-3'}></use>
           </svg>
-
           <p className={css.stepThreeText}>Flachdach</p>
         </li>
 
@@ -38,7 +37,7 @@ export const LeadStepThree = ({ step, setStep, stepInfo, setStepInfo }) => {
         </li>
 
         <li className={css.stepThreeItem} onClick={onItemClick} id="Zeltdach">
-          <svg className={css.stepThreeIcon}>
+          <svg className={css.stepThreeIconFour}>
             <use href={sprite + '#icon-house-6'}></use>
           </svg>
 
@@ -57,6 +56,6 @@ export const LeadStepThree = ({ step, setStep, stepInfo, setStepInfo }) => {
           <p className={css.stepThreeText}>Sonstiges Dach</p>
         </li>
       </ul>
-    </div>
+    </>
   );
 };

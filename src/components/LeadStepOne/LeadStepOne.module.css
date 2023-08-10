@@ -1,7 +1,3 @@
-.stepOneWrap {
-  margin-top: 54px;
-}
-
 .stepOneTitle {
   color: #000;
   width: 272px;
@@ -18,20 +14,30 @@
   display: flex;
   gap: 21px;
 }
+
 .stepOneItem {
   width: 160px;
+  height: 144px;
   cursor: pointer;
 }
 
-.stepOneIconWrap {
+.stepOneIconWrap,
+.stepOneIconWrapSecond {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 22px 25px;
   margin-bottom: 12px;
+
+  transition: scale var(--cubic-bezier);
 }
 
 .stepOneIconWrap:last-child {
   padding: 22px 20px;
+}
+
+.stepOneIconWrap:is(:hover, :focus),
+.stepOneIconWrapSecond:is(:hover, :focus) {
+  scale: 1.05;
 }
 
 .stepOneIcon {
@@ -52,4 +58,71 @@
   font-weight: 500;
   line-height: 157%;
   letter-spacing: 0.35px;
+}
+
+@media screen and (min-width: 762px) {
+  .stepOneTitle {
+    font-size: 24px;
+    width: 502px;
+    line-height: 167%;
+  }
+
+  .stepOneList {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stepOneItem {
+    width: 306px;
+  }
+
+  .stepOneIcon,
+  .stepOneIconSecond {
+    width: 200px;
+    height: 200px;
+  }
+
+  .stepOneIconWrap,
+  .stepOneIconWrapSecond {
+    padding: 29px 53px;
+    margin-bottom: 25px;
+  }
+
+  .stepOneText {
+    font-size: 20px;
+    line-height: 200%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepOneTitle {
+    font-size: 28px;
+    line-height: 143%;
+    margin-bottom: 48px;
+  }
+
+  .stepOneItem {
+    width: 324px;
+    height: 274px;
+  }
+
+  .stepOneIcon {
+    width: 226px;
+    height: 200px;
+  }
+
+  .stepOneIconSecond {
+    width: 280px;
+    height: 230px;
+  }
+
+  .stepOneIconWrap {
+    padding: 37px 49px;
+    margin-bottom: 16px;
+  }
+
+  .stepOneIconWrapSecond {
+    padding: 22px;
+    margin-bottom: 16px;
+  }
 }

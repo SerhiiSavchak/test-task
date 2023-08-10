@@ -1,7 +1,3 @@
-.stepThreeWrap {
-  margin-top: 54px;
-}
-
 .stepThreeTitle {
   color: #000;
   width: 272px;
@@ -19,22 +15,30 @@
   flex-wrap: wrap;
   gap: 24px 20px;
 }
+
 .stepThreeItem {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3.689516067504883px 11.068548202514648px 0px
+    rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 14px 25px 5px;
+  transition: scale var(--cubic-bezier);
+}
+
+.stepThreeItem:is(:hover, :focus) {
+  scale: 1.05;
 }
 
 .stepThreeItem:last-child {
   margin: 0 auto;
 }
 
-.stepThreeIcon {
+.stepThreeIcon,
+.stepThreeIconFour {
   width: 110px;
   height: 100px;
 }
@@ -47,4 +51,86 @@
   font-weight: 500;
   line-height: 157%;
   letter-spacing: 0.35px;
+}
+
+@media screen and (min-width: 762px) {
+  .stepThreeTitle {
+    font-size: 28px;
+    line-height: 143%;
+    width: 762px;
+    margin-bottom: 36px;
+  }
+
+  .stepThreeList {
+    gap: 28px 20px;
+  }
+
+  .stepThreeItem {
+    padding: 13px 45px 0px;
+    gap: 7px;
+  }
+
+  .stepThreeItem:nth-child(4) {
+    padding: 21px 40px 0px;
+    margin-left: auto;
+  }
+
+  .stepThreeItem:last-child {
+    padding: 21px 45px 0px;
+    margin-left: unset;
+  }
+
+  .stepThreeIcon {
+    width: 150px;
+    height: 140px;
+  }
+
+  .stepThreeIconFour {
+    width: 160px;
+    height: 140px;
+  }
+
+  .stepThreeText {
+    font-size: 18px;
+    line-height: 222%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepThreeTitle {
+    margin-bottom: 48px;
+  }
+
+  .stepThreeList {
+    justify-content: center;
+    gap: 42px 20px;
+  }
+
+  .stepThreeItem {
+    gap: 16px;
+    padding: 17px 69px 15px;
+  }
+
+  .stepThreeItem:nth-child(4) {
+    padding: 18px 49px;
+  }
+
+  .stepThreeItem:last-child {
+    padding: 18px 69px;
+  }
+
+  .stepThreeIcon {
+    width: 186px;
+    height: 166px;
+  }
+
+  .stepThreeIconFour {
+    width: 226px;
+    height: 166px;
+  }
+
+  .stepThreeText {
+    font-size: 20px;
+    line-height: 170%;
+  }
 }

@@ -1,0 +1,88 @@
+.stepNineIcon {
+  width: 160px;
+  height: 160px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.stepNineTitle {
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  margin-bottom: 8px;
+}
+
+.stepNineText {
+  color: var(--dark-grey);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  margin-bottom: 64px;
+}
+
+.stepNineBtn {
+  font-family: metropolis-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0.35px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 147px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--black);
+  transition: color var(--cubic-bezier), background-color var(--cubic-bezier);
+}
+
+.stepNineBtn:is(:hover, :focus) {
+  color: var(--white);
+  background-color: rgba(11, 11, 12, 0.7);
+}
+
+@media screen and (min-width: 762px) {
+  .stepNineIcon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stepNineTitle {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 125%;
+  }
+
+  .stepNineText {
+    font-size: 24px;
+    line-height: 167%;
+  }
+
+  .stepNineBtn {
+    width: 370px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepNineIcon {
+    margin-bottom: 72px;
+  }
+
+  .stepNineTitle {
+    margin-bottom: 14px;
+  }
+
+  .stepNineBtn {
+    width: 391px;
+  }
+}

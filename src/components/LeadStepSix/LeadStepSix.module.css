@@ -1,0 +1,113 @@
+.stepSixTitle {
+  color: #000;
+  width: 342px;
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.stepSixList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 20px;
+}
+
+.stepSixItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 160px;
+  cursor: pointer;
+  box-shadow: 0px 3.4591195583343506px 10.377358436584473px 0px
+    rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding-top: 20px;
+  transition: scale var(--cubic-bezier);
+}
+
+.stepSixItem:is(:hover, :focus) {
+  scale: 1.05;
+}
+
+.stepSixIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.stepSixText {
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 157%;
+  line-height: 242.857%;
+}
+
+.stepSixItem:last-child {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 762px) {
+  .stepSixTitle {
+    font-size: 28px;
+    line-height: 143%;
+    margin-bottom: 36px;
+  }
+
+  .stepSixList {
+    margin: 0 auto;
+    width: 372px;
+    gap: 28px 20px;
+  }
+
+  .stepSixItem {
+    padding-top: 31px;
+    width: 176px;
+    gap: 29px;
+  }
+
+  .stepSixIcon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0;
+  }
+
+  .stepSixText {
+    line-height: 286%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepSixTitle {
+    width: 762px;
+    margin-bottom: 48px;
+  }
+
+  .stepSixList {
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .stepSixItem {
+    padding-top: unset;
+    padding: 45px 20px 10px;
+  }
+
+  .stepSixIcon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stepSixText {
+    font-size: 20px;
+    line-height: 170%;
+  }
+}

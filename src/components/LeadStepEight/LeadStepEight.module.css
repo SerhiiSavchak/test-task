@@ -1,0 +1,172 @@
+.stepEightTopTitle {
+  margin-bottom: 28px;
+  color: var(--black);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.stepEightTitle {
+  color: #000;
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.stepEightText {
+  margin-bottom: 32px;
+  color: var(--dark-grey);
+  text-align: center;
+  font-family: metropolis-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.stepEightForm {
+  margin-bottom: 64px;
+}
+
+.stepEightList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.stepEightItem {
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}
+
+.stepEightLabel {
+  color: var(--black);
+  font-family: metropolis-medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0.32px;
+}
+
+.stepEightInput {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #cbcbd4;
+  color: var(--dark-grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 200%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.stepEightInput::placeholder {
+  color: #cbcbd4;
+  text-align: left;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+}
+
+.stepEightBtn {
+  font-family: metropolis-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0.35px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 147px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--black);
+  transition: color var(--cubic-bezier), background-color var(--cubic-bezier);
+}
+
+.stepEightBtn:is(:hover, :focus) {
+  color: var(--white);
+  background-color: rgba(11, 11, 12, 0.7);
+}
+
+@media screen and (min-width: 762px) {
+  .stepEightTopTitle {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+
+  .stepEightTitle {
+    font-size: 24px;
+    line-height: 167%;
+    margin-bottom: 16px;
+  }
+
+  .stepEightText {
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 200%;
+    margin-bottom: 64px;
+  }
+
+  .stepEightForm {
+    margin: 0 auto;
+    margin-bottom: 138px;
+    width: 632px;
+  }
+
+  .stepEightList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 20px;
+  }
+
+  .stepEightItem {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .stepEightLabel {
+    display: none;
+  }
+
+  .stepEightBtn {
+    margin: 0 auto;
+    width: 371px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepEightTopTitle {
+    font-size: 54px;
+  }
+
+  .stepEightTitle {
+    margin-bottom: 14px;
+    width: 698px;
+  }
+
+  .stepEightText {
+    margin-bottom: 48px;
+  }
+
+  .stepEightForm {
+    width: 668px;
+  }
+
+  .stepEightList {
+    gap: 28px 20px;
+  }
+
+  .stepEightBtn {
+    width: 392px;
+  }
+}

@@ -23,9 +23,9 @@ export const LeadStepTwo = ({ step, setStep, stepInfo, setStepInfo }) => {
   };
 
   return (
-    <div className={css.stepTwoWrap}>
+    <>
       <h2 className={css.stepTwoTitle}>
-        Wie hoch ist dein Jahresstromverbrauch ca.?
+        Dein geschätzter Jahresstromverbrauch?
       </h2>
       <form onSubmit={onFormSubmit} className={css.stepTwoForm}>
         <div className={css.stepTwoTopWrap}>
@@ -53,6 +53,6 @@ export const LeadStepTwo = ({ step, setStep, stepInfo, setStepInfo }) => {
           Weiter
         </button>
       </form>
-    </div>
+    </>
   );
 };

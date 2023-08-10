@@ -1,0 +1,92 @@
+.stepNotificationWrap {
+  padding: 48px 0px;
+  background-color: #f4f5f7;
+}
+
+.stepNotificationContainer {
+  width: 342px;
+  margin: 0 auto;
+}
+
+.stepNotificationList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stepNotificationTitle {
+  max-width: 162px;
+  color: var(--black);
+  font-family: metropolis-medium;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  line-height: 175%;
+}
+
+.stepNotificationText {
+  color: var(--black);
+  width: 342px;
+  height: 64px;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: 0.35px;
+}
+
+@media screen and (min-width: 762px) {
+  .stepNotificationWrap {
+    padding: 72px 0;
+  }
+
+  .stepNotificationContainer {
+    width: 762px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stepNotificationList {
+    flex-direction: row;
+    width: 634px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stepNotificationTitle {
+    max-width: 184px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 178%;
+  }
+
+  .stepNotificationText {
+    width: 306px;
+    line-height: 171%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stepNotificationContainer {
+    width: 1200px;
+  }
+
+  .stepNotificationList {
+    width: 942px;
+    gap: 158px;
+  }
+
+  .stepNotificationItem {
+    width: 392px;
+  }
+
+  .stepNotificationTitle {
+    max-width: 392px;
+    font-size: 20px;
+    line-height: 200%;
+    margin-bottom: 4px;
+  }
+
+  .stepNotificationText {
+    width: 392px;
+    letter-spacing: 0.35px;
+  }
+}

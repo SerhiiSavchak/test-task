@@ -8,8 +8,8 @@ export const LeadStepOne = ({ step, setStep, stepInfo, setStepInfo }) => {
   };
 
   return (
-    <div className={css.stepOneWrap}>
-      <h2 className={css.stepOneTitle}>Wofür ist die Solaranlage bestimmt?</h2>
+    <>
+      <h2 className={css.stepOneTitle}>Welcher  Immobilieentyp</h2>
       <ul className={css.stepOneList}>
         <li
           className={css.stepOneItem}
@@ -24,7 +24,7 @@ export const LeadStepOne = ({ step, setStep, stepInfo, setStepInfo }) => {
           <p className={css.stepOneText}>Privathaushalt</p>
         </li>
         <li className={css.stepOneItem} onClick={onItemClick} id="Gewerbe">
-          <div className={css.stepOneIconWrap}>
+          <div className={css.stepOneIconWrapSecond}>
             <svg className={css.stepOneIconSecond}>
               <use href={sprite + '#icon-house-2'}></use>
             </svg>
@@ -32,6 +32,6 @@ export const LeadStepOne = ({ step, setStep, stepInfo, setStepInfo }) => {
           <p className={css.stepOneText}>Gewerbe</p>
         </li>
       </ul>
-    </div>
+    </>
   );
 };

@@ -1,21 +1,57 @@
 .startMessageTitle {
-  max-width: 342px;
   color: var(--black);
   text-align: center;
   font-family: metropolis-medium;
   font-size: 20px;
   font-weight: 500;
   line-height: 170%;
+  margin: 0 auto;
   margin-bottom: 14px;
+  width: 227px;
 }
+
 .startMessageText {
-  max-width: 342px;
   color: var(--dark-grey);
   text-align: center;
   font-size: 14px;
   font-family: metropolis-medium;
   line-height: 175%;
   font-weight: 500;
+  width: 227px;
+  height: 49px;
   letter-spacing: 0.35px;
+  margin: 0 auto;
   margin-bottom: 34px;
+}
+
+@media screen and (min-width: 762px) {
+  .startMessageTitle {
+    font-size: 29px;
+    line-height: 142%;
+    width: 762px;
+    margin-bottom: 16px;
+  }
+
+  .startMessageText {
+    font-size: 18px;
+    width: 100%;
+    line-height: 178%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .startMessageTitle {
+    font-size: 28px;
+    line-height: 143%;
+    width: 762px;
+    margin-bottom: 14px;
+  }
+
+  .startMessageText {
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 64px;
+  }
 }
