@@ -2,6 +2,7 @@ import css from './LeadGeneration.module.css';
 import sprite from '../../images/icons/sprite.svg';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { LeadSection, LeadContainer } from './LeadGeneration.styled';
 import { LeadStartMessage } from 'components/LeadStartMessage/LeadStartMessage';
 import { LeadStepNotification } from 'components/LeadStepNotification/LeadStepNotification';
 import { LeadStepTwo } from 'components/LeadStepTwo/LeadStepTwo';
@@ -39,8 +40,16 @@ export const LeadGeneration = () => {
   console.log(stepInfo);
 
   return (
-    <section className={css.leadSection}>
-      <div className={css.container}>
+    <LeadSection
+      paddingmobile={step !== 1 && step !== 8 && step !== 9 && '64px'}
+      paddingtablet={step !== 1 && step !== 8 && step !== 9 && '130px'}
+      paddingdesc={step !== 1 && step !== 8 && step !== 9 && '132px'}
+    >
+      <LeadContainer
+        paddingmobile={step === 1 && '48px'}
+        paddingtablet={step === 1 && '72px'}
+        paddingdesc={step === 1 && '132px'}
+      >
         {step === 1 && <LeadStartMessage />}
         {step < 8 && (
           <ul className={css.leadList}>
@@ -87,7 +96,7 @@ export const LeadGeneration = () => {
         )}
         {step === 2 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepTwoWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -102,7 +111,7 @@ export const LeadGeneration = () => {
         )}
         {step === 3 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepThreeWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -117,7 +126,7 @@ export const LeadGeneration = () => {
         )}
         {step === 4 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepFourWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -132,7 +141,7 @@ export const LeadGeneration = () => {
         )}
         {step === 5 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepFiveWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -147,7 +156,7 @@ export const LeadGeneration = () => {
         )}
         {step === 6 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepSixWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -162,7 +171,7 @@ export const LeadGeneration = () => {
         )}
         {step === 7 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepSevenWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -177,7 +186,7 @@ export const LeadGeneration = () => {
         )}
         {step === 8 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepEightWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -192,7 +201,7 @@ export const LeadGeneration = () => {
         )}
         {step === 9 && (
           <motion.div
-            className={css.stepOneWrap}
+            className={css.stepNineWrap}
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -205,28 +214,9 @@ export const LeadGeneration = () => {
             />
           </motion.div>
         )}
-      </div>
-
-      {step === 7 && (
-        <motion.div
-          className={css.stepOneWrap}
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <LeadStepNotification />
-        </motion.div>
-      )}
-      {step === 8 && (
-        <motion.div
-          className={css.stepOneWrap}
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <LeadStepNotification />
-        </motion.div>
-      )}
-    </section>
+      </LeadContainer>
+      {step === 7 && <LeadStepNotification />}
+      {step === 8 && <LeadStepNotification />}
+    </LeadSection>
   );
 };

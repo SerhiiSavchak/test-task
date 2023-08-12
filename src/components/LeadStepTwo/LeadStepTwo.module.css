@@ -51,9 +51,6 @@
   display: block;
   border: none;
   margin-bottom: 10px;
-}
-
-.stepTwoInput:focus-visible {
   outline: none;
 }
 
@@ -61,6 +58,11 @@
   background: var(--grey);
   height: 4px;
   border-radius: 6px;
+}
+
+.stepTwoInput::-webkit-progress-bar {
+  background: #d92134;
+  height: 4px;
 }
 
 .stepTwoInput::-webkit-slider-thumb {

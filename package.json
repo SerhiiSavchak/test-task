@@ -4,9 +4,13 @@
   "private": true,
   "homepage": "https://SerhiiSavchak.github.io/test-task/",
   "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
     "framer-motion": "^10.15.1",
     "nanoid": "^4.0.2",
     "react": "^18.1.0",

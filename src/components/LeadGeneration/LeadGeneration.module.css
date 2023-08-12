@@ -1,13 +1,3 @@
-.container {
-  width: 342px;
-  margin: 0 auto;
-}
-
-.leadSection {
-  padding-top: 48px;
-  padding-bottom: 120px;
-}
-
 .leadList {
   display: flex;
   justify-content: space-between;
@@ -65,21 +55,49 @@
 }
 
 .stepOneWrap {
-  margin-top: 48px;
+  margin: 54px 0px 0px;
+  padding-bottom: 152px;
+}
+.stepTwoWrap {
+  margin: 48px 0px 0px;
+  padding-bottom: 196px;
+}
+.stepThreeWrap {
+  margin: 48px 0px 0px;
+  padding-bottom: 64px;
+}
+.stepFourWrap {
+  margin: 48px 0px 0px;
+  padding-bottom: 173px;
+}
+.stepFiveWrap {
+  margin: 48px 0px 0px;
+  padding-bottom: 142px;
+}
+.stepSixWrap {
+  margin: 54px 0px 0px;
+  padding-bottom: 152px;
+}
+.stepSevenWrap {
+  margin: 48px 0px 0px;
+}
+.stepEightWrap {
+  padding-top: 130px;
+}
+.stepNineWrap {
+  padding-top: 130px;
+  padding-bottom: 212px;
+}
+.stepNotifyWrap {
+  margin: 112px 0px 0px;
 }
 
 @media screen and (min-width: 762px) {
-  .container {
-    width: 762px;
-  }
-  .leadSection {
-    padding-top: 72px;
-    padding-bottom: 218px;
-  }
   .leadList {
     justify-content: center;
     gap: 155px;
   }
+
   .leadIcon {
     width: 48.5px;
     height: 48.5px;
@@ -103,16 +121,45 @@
   }
 
   .stepOneWrap {
-    margin-top: 64px;
+    margin: 64px 0px 0px;
+    padding-bottom: 290px;
+  }
+  .stepTwoWrap {
+    margin: 64px 0px 0px;
+    padding-bottom: 448px;
+  }
+  .stepThreeWrap {
+    margin: 64px 0px 0px;
+    padding-bottom: 264px;
+  }
+  .stepFourWrap {
+    margin: 64px 0px 0px;
+    padding-bottom: 224px;
+  }
+  .stepFiveWrap {
+    margin: 64px 0px 0px;
+    padding-bottom: 224px;
+  }
+  .stepSixWrap {
+    margin: 64px 0px 0px;
+    padding-bottom: 152px;
+  }
+  .stepSevenWrap {
+    margin: 64px 0px 0px;
+  }
+  .stepEightWrap {
+    padding-top: 172px;
+  }
+  .stepNineWrap {
+    padding-top: 250px;
+    padding-bottom: 394px;
+  }
+  .stepNotifyWrap {
+    margin: 210px 0px 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
   .leadList {
     gap: 200px;
   }
@@ -138,5 +185,43 @@
   .leadText {
     font-size: 16px;
     line-height: 212%;
+  }
+
+  .stepOneWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 234px;
+  }
+  .stepTwoWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 402px;
+  }
+  .stepThreeWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 132px;
+  }
+  .stepFourWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 336px;
+  }
+  .stepFiveWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 338px;
+  }
+  .stepSixWrap {
+    margin: 48px 0px 0px;
+    padding-bottom: 338px;
+  }
+  .stepSevenWrap {
+    margin: 48px 0px 0px;
+  }
+  .stepEightWrap {
+    padding-top: 104px;
+  }
+  .stepNineWrap {
+    padding-top: 220px;
+    padding-bottom: 386px;
+  }
+  .stepNotifyWrap {
+    margin: 130px 0px 0px;
   }
 }

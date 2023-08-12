@@ -1,5 +1,4 @@
 import css from './LeadStepEight.module.css';
-
 import { useState } from 'react';
 
 export const LeadStepEight = ({ step, setStep, stepInfo, setStepInfo }) => {
