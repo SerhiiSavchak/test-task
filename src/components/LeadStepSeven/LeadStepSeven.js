@@ -2,6 +2,8 @@ import css from './LeadStepSeven.module.css';
 import { BallTriangle } from 'react-loader-spinner';
 import { useState } from 'react';
 
+import { Confetti } from 'components/Confetti/Confetti';
+
 export const LeadStepSeven = ({ step, setStep, stepInfo, setStepInfo }) => {
   const [loading, setLoading] = useState(false);
   const [postIndex, setPostIndex] = useState('');
@@ -52,6 +54,7 @@ export const LeadStepSeven = ({ step, setStep, stepInfo, setStepInfo }) => {
 
   return (
     <>
+      <Confetti />
       <h2 className={css.stepSevenTitle}>Wo ist das PV-Project geplant?</h2>
 
       <form onSubmit={onFormSubmit} className={css.stepSevenForm}>

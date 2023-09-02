@@ -1,12 +1,14 @@
 import css from './LeadStepTwo.module.css';
 import { useState } from 'react';
+import {
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+} from '@chakra-ui/react';
 
 export const LeadStepTwo = ({ step, setStep, stepInfo, setStepInfo }) => {
   const [kwhValue, setKwhValue] = useState(10);
-
-  const onInputChange = evt => {
-    setKwhValue(evt.target.value);
-  };
 
   const onFormSubmit = evt => {
     evt.preventDefault();
@@ -25,17 +27,28 @@ export const LeadStepTwo = ({ step, setStep, stepInfo, setStepInfo }) => {
       <form onSubmit={onFormSubmit} className={css.stepTwoForm}>
         <div className={css.stepTwoTopWrap}>
           <p className={css.stepTwoText}> kWh:</p>
-          <p className={css.stepTwoTextValue}>
-            {kwhValue < 1000 && kwhValue}
-            {kwhValue >= 1000 &&
-              kwhValue < 10000 &&
-              `${kwhValue[0]}.${kwhValue[1]}${kwhValue[2]}${kwhValue[3]}`}
-            {kwhValue >= 10000 &&
-              `${kwhValue[0]}${kwhValue[1]}.${kwhValue[2]}${kwhValue[3]}${kwhValue[4]}`}
-          </p>
+          <p className={css.stepTwoTextValue}>{kwhValue}</p>
         </div>
 
-        <input
+        <Slider
+          name="kwh"
+          aria-label="slider-ex-4"
+          min={10}
+          max={15000}
+          step={10}
+          value={kwhValue}
+          onChange={val => {
+            setKwhValue(val);
+          }}
+        >
+          <SliderTrack bg="#DEDFE3">
+            <SliderFilledTrack bg="#D92134" />
+          </SliderTrack>
+
+          <SliderThumb bg="#D92134" />
+        </Slider>
+
+        {/* <input
           type="range"
           value={kwhValue}
           name="kwh"
@@ -44,7 +57,7 @@ export const LeadStepTwo = ({ step, setStep, stepInfo, setStepInfo }) => {
           step="10"
           onChange={onInputChange}
           className={css.stepTwoInput}
-        ></input>
+        ></input> */}
         <div className={css.stepTwoBottomWrap}>
           <p className={css.stepTwoText}>1.000</p>
           <p className={css.stepTwoText}>15.000</p>
